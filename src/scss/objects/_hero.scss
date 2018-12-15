@@ -1,0 +1,24 @@
+/**
+  * Hero
+  */
+
+.hero {
+	background: $color__primary;
+	text-align: center;
+}
+
+.hero__inner {
+	padding: 8em 0 10em;
+}
+
+.hero__heading {
+	color: white;
+	font-size: 3.1em;
+	font-weight: 300;
+}
+
+.hero__subheading {
+	font-size: 1.2em;
+	color: rgba(255, 255, 255, 0.75);
+	font-weight: 300;
+}
