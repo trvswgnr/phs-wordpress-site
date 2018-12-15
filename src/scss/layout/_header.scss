@@ -1,0 +1,30 @@
+/**
+  * Header
+  */
+
+.logo {
+	max-width: 260px;
+	display: flex;
+
+	img {
+		height: 100%;
+		width: 100%;
+	}
+}
+
+.header__inner {
+	padding: 9px 0;
+	background: white;
+
+	@media (max-width: $tablet) {
+		padding-bottom: 1.5em;
+	}
+}
+
+.header__row {
+	align-items: center;
+
+	@media (max-width: $tablet) {
+		align-items: center;
+	}
+}
