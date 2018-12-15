@@ -1,0 +1,83 @@
+/**
+	* Buttons
+	*/
+
+button,
+.btn {
+	display: inline-block;
+	border: 1px solid $color__primary;
+	font-weight: 600;
+	font-size: 13px;
+	letter-spacing: 0.06em;
+	padding: 16px 27px;
+	text-decoration: none;
+	background: $color__primary;
+	color: #ffffff;
+	line-height: 1;
+	cursor: pointer;
+	text-align: center;
+	text-transform: uppercase;
+	transition: background 250ms ease-in-out, transform 150ms ease;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+
+	@media (min-width: $tablet) {
+		box-shadow: 0 2px 2px rgba(0, 0, 0, 0.12);
+	}
+
+	// targets buttons next to other buttons
+	& + & {
+		margin: 0 0 0 0.3em;
+	}
+
+	&:hover,
+	&:focus {
+		background: darken($color__primary, 10%);
+		color: white !important;
+
+	}
+
+	&:focus {
+		outline: 1px solid #fff;
+		outline-offset: -4px;
+	}
+
+	&:active {
+		transform: scale(0.97);
+	}
+
+	&:visited {
+		color: white;
+	}
+	// success color
+//	&.btn--success {
+//		background: $color__secondary;
+//		border: 1px solid $color__secondary;
+//
+//		&:hover,
+//		&:focus {
+//			background: darken($color__secondary, 10%);
+//		}
+//	}
+
+	// danger color
+//	&.btn--danger {
+//		background: $color__danger;
+//		border: 1px solid $color__danger;
+//
+//		&:hover,
+//		&:focus {
+//			background: darken($color__danger, 10%);
+//		}
+//	}
+//
+//	&.btn--transparent {
+//		background: transparent;
+//		border: 1px solid transparent;
+//
+//		&:hover,
+//		&:focus {
+//			background: transparent;
+//		}
+//	}
+}
