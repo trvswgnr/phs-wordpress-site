@@ -15,10 +15,6 @@
 .header__inner {
 	padding: 9px 0;
 	background: white;
-
-	@media (max-width: $tablet) {
-		padding-bottom: 1.5em;
-	}
 }
 
 .header__row {
