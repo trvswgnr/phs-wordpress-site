@@ -84,6 +84,10 @@ body {
   width: 100%;
   overflow-x: hidden; }
 
+.content {
+  padding: 3em 0;
+  min-height: 500px; }
+
 /**
   * Typography
   */
@@ -660,6 +664,9 @@ address {
     height: 100%;
     width: 100%; }
 
+.header {
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.13); }
+
 .header__inner {
   padding: 9px 0;
   background: white; }
@@ -941,6 +948,23 @@ address {
 /**
   * Forms
   */
+.wpcf7 {
+  max-width: 450px;
+  margin: 0 auto; }
+
+input, textarea {
+  width: 100%;
+  font-size: 16px;
+  padding: 0 8px; }
+  input:active, input:focus, textarea:active, textarea:focus {
+    outline: none; }
+
+input {
+  height: 32px; }
+
+textarea {
+  padding: 8px; }
+
 .gform_wrapper#gform_wrapper_1 {
   padding-top: 5em; }
 
@@ -1103,7 +1127,7 @@ address {
 button,
 .btn,
 .gform_wrapper .gform_footer .button.gform_button,
-.menu-button a {
+.menu-button a, input[type="submit"] {
   display: inline-block;
   border: 1px solid #1a4b96;
   font-weight: 600;
@@ -1126,12 +1150,12 @@ button,
     button,
     .btn,
     .gform_wrapper .gform_footer .button.gform_button,
-    .menu-button a {
+    .menu-button a, input[type="submit"] {
       box-shadow: 0 2px 2px rgba(0, 0, 0, 0.12); } }
   button + button,
   .btn + button,
   .gform_wrapper .gform_footer .button.gform_button + button,
-  .menu-button a + button, button + .btn, .gform_wrapper .gform_footer button + .button.gform_button, .menu-button button + a,
+  .menu-button a + button, input[type="submit"] + button, button + .btn, .gform_wrapper .gform_footer button + .button.gform_button, .menu-button button + a,
   .btn + .btn,
   .gform_wrapper .gform_footer .button.gform_button + .btn,
   .menu-button a + .btn,
@@ -1142,7 +1166,10 @@ button,
   .menu-button .btn + a,
   .gform_wrapper .gform_footer .menu-button .button.gform_button + a,
   .menu-button .gform_wrapper .gform_footer .button.gform_button + a,
-  .menu-button a + a {
+  .menu-button a + a, input[type="submit"] + .btn, .gform_wrapper .gform_footer input[type="submit"] + .button.gform_button, .menu-button input[type="submit"] + a, button + input[type="submit"],
+  .btn + input[type="submit"],
+  .gform_wrapper .gform_footer .button.gform_button + input[type="submit"],
+  .menu-button a + input[type="submit"], input[type="submit"] + input[type="submit"] {
     margin: 0 0 0 0.3em; }
   button:hover, button:focus,
   .btn:hover,
@@ -1150,26 +1177,29 @@ button,
   .menu-button a:hover,
   .btn:focus,
   .gform_wrapper .gform_footer .button.gform_button:focus,
-  .menu-button a:focus {
+  .menu-button a:focus, input[type="submit"]:hover, input[type="submit"]:focus {
     background: #12356b;
     color: white !important; }
   button:focus,
   .btn:focus,
   .gform_wrapper .gform_footer .button.gform_button:focus,
-  .menu-button a:focus {
+  .menu-button a:focus, input[type="submit"]:focus {
     outline: 1px solid #fff;
     outline-offset: -4px; }
   button:active,
   .btn:active,
   .gform_wrapper .gform_footer .button.gform_button:active,
-  .menu-button a:active {
+  .menu-button a:active, input[type="submit"]:active {
     -webkit-transform: scale(0.97);
             transform: scale(0.97); }
   button:visited,
   .btn:visited,
   .gform_wrapper .gform_footer .button.gform_button:visited,
-  .menu-button a:visited {
+  .menu-button a:visited, input[type="submit"]:visited {
     color: white; }
+
+input[type="submit"] {
+  padding-bottom: 28px; }
 
 /**
   * -- TEMPLATES
