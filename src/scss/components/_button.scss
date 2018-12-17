@@ -3,7 +3,7 @@
 	*/
 
 button,
-.btn {
+.btn, input[type="submit"] {
 	display: inline-block;
 	border: 1px solid $color__primary;
 	font-weight: 600;
@@ -80,4 +80,9 @@ button,
 //			background: transparent;
 //		}
 //	}
+}
+
+
+input[type="submit"] {
+	padding-bottom: 28px;
 }
