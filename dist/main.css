@@ -755,7 +755,7 @@ address {
   font-weight: 300; }
 
 .hero__heading, .hero__subheading {
-  text-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.5); }
+  text-shadow: 0.04em 0.04em 0.04em rgba(0, 0, 0, 0.5); }
 
 /**
   * Marketing Points Section
