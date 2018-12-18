@@ -18,7 +18,7 @@
             </div>
             <div class="col-sm-8 col-xs-5">
               <div class="mobile-menu-toggle u-hidden-desktop u-text-right js-menu-toggle">
-                <img src="<?php echo get_template_directory_uri() . '/assets/img/menu-bars.svg'; ?>" alt="">
+                <img src="<?php echo get_template_directory_uri() . '/assets/img/menu-bars.svg'; ?>" alt="mobile toggle" style="height: 40px;">
               </div>
                <div class="nav-wrapper u-visible-desktop">
                 <?php
