@@ -83,6 +83,9 @@ body {
   position: absolute;
   width: 100%;
   overflow-x: hidden; }
+  @media (min-width: 920px) {
+    #page {
+      padding-top: 95px; } }
 
 .content {
   padding: 3em 0;
@@ -665,13 +668,32 @@ address {
   */
 .logo {
   max-width: 260px;
-  display: flex; }
+  display: flex;
+  transition: 0.2s; }
+  @media (max-width: 768px) {
+    .logo {
+      max-width: 150px; } }
+  @media (min-width: 920px) {
+    .is-scrolled .logo {
+      max-width: 150px;
+      transition: 0.2s; } }
   .logo img {
     height: 100%;
     width: 100%; }
 
 .header {
-  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.13); }
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.13);
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  z-index: 100; }
+  @media (min-width: 920px) {
+    .header {
+      position: absolute; } }
+  @media (min-width: 920px) {
+    .header.is-scrolled {
+      position: fixed; } }
 
 .header__inner {
   padding: 9px 0;
