@@ -94,6 +94,10 @@ body {
     .content {
       padding: 1.5em 0; } }
 
+#wpadminbar {
+  top: inherit;
+  bottom: 0; }
+
 /**
   * Typography
   */
