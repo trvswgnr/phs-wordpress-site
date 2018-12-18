@@ -21,6 +21,10 @@ $gutter: 1.5rem;
   padding-left: 1rem;
 }
 
+.container--sm {
+	max-width: 700px;
+}
+
 .row {
   box-sizing: border-box;
   display: -webkit-flex;

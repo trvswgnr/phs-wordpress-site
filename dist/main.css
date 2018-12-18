@@ -88,9 +88,6 @@ body {
   padding: 3em 0;
   min-height: 500px; }
 
-.container.content {
-  max-width: 700px; }
-
 /**
   * Typography
   */
@@ -230,6 +227,9 @@ address {
   margin-left: auto;
   padding-right: 1rem;
   padding-left: 1rem; }
+
+.container--sm {
+  max-width: 700px; }
 
 .row {
   box-sizing: border-box;

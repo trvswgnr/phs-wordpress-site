@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="container content">
+<div class="container container--sm content">
   <?php
   if ( have_posts() ) :
     while ( have_posts() ) :
