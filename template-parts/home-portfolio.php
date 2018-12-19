@@ -1,5 +1,6 @@
 <?php
 $recent_work = get_field('recent_work');
+$recent_work_link = get_field('recent_work_link');
 $home_about_button = get_field('home_about_button');
 ?>
 <section class="section">
@@ -21,7 +22,7 @@ $home_about_button = get_field('home_about_button');
 					?>
 				</div>
 				<div class="portfolio-sample__more">
-					<a href="#">View All Work</a>
+					<a href="<?php echo $recent_work_link['url']; ?>"><?php echo $recent_work_link['title']; ?></a>
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-6">
