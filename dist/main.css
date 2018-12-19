@@ -1435,3 +1435,14 @@ input[type="submit"] {
     .resource-tile__social a:hover {
       opacity: 0.8; }
 
+/**
+  * -- SHAME
+  */
+/**
+	* SHAME
+	* Everything here should be refactored or moved.
+	*/
+@media (max-width: 480px) {
+  .details33 .details {
+    bottom: 0; } }
+
