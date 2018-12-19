@@ -7,9 +7,14 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<?php
 	$color_primary = get_field('color_primary','options');
-	if ($color_primary) {
-	echo "<style>.fg__primary{color:$color_primary;}.bg__primary{background-color:$color_primary;}</style>";
-	}
+	if ($color_primary) :
+	?>
+	<style>
+		.fg__primary{color:<?php echo $color_primary; ?>}
+		.bg__primary{background-color:<?php echo $color_primary;?>}
+	</style>
+	<?php
+	endif;
 	?>
 	<?php wp_head(); ?>
 </head>
@@ -20,7 +25,7 @@
         <div class="container">
           <div class="row header__row">
             <div class="col-sm-4 col-xs-7">
-              <a href="<?php echo get_site_url(); ?>" class="logo"><img src="<?php echo get_template_directory_uri() . '/assets/img/logo-color.png'; ?>" alt="Premier Logo" /></a>
+              <a href="<?php echo get_site_url(); ?>" class="logo"><img src="<?php the_field('brand_logo','options'); ?>" alt="logo" /></a>
             </div>
             <div class="col-sm-8 col-xs-5">
               <div class="mobile-menu-toggle u-hidden-desktop u-text-right js-menu-toggle">
