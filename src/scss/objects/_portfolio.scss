@@ -10,8 +10,10 @@
 .portfolio-sample__item-wrapper {
 	background: white;
 	border: 1px solid #ccc;
-	width: 25%;
 	padding: 6px;
+	@media (min-width: $mobile) {
+		flex: 1;
+	}
 	@media (max-width: $mobile) {
 		width: 50%;
 	}
@@ -21,7 +23,8 @@
 	height: 0;
 	padding-bottom: 75%;
 	width: 100%;
-	background: grey;
+	background-color: grey;
+	background-size: cover;
 }
 
 .portfolio-sample__more {
