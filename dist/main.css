@@ -1444,5 +1444,5 @@ input[type="submit"] {
 	*/
 @media (max-width: 480px) {
   .details33 .details {
-    bottom: 0; } }
+    bottom: 0 !important; } }
 
