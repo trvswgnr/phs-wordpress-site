@@ -5,6 +5,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+	<?php
+	$color_primary = get_field('color_primary','options');
+	if ($color_primary) {
+	echo "<style>.fg__primary{color:$color_primary;}.bg__primary{background-color:$color_primary;}</style>";
+	}
+	?>
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
