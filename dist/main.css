@@ -104,14 +104,14 @@ body {
 /**
   * Typography
   */
-a {
+a, a:visited {
   color: #1a4b96;
   cursor: pointer;
   text-decoration: none;
   font-weight: 600; }
-  a strong {
+  a strong, a:visited strong {
     color: currentColor; }
-  a:hover, a:focus, a:visited, a:visited:hover {
+  a:hover, a:focus, a:visited:hover, a:visited:focus {
     color: #2261c1; }
 
 p, .p {

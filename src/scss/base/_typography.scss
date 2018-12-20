@@ -1,7 +1,7 @@
 /**
   * Typography
   */
-a {
+a, a:visited {
   color: $color__primary;
   cursor: pointer;
   text-decoration: none;
@@ -9,9 +9,8 @@ a {
 
   strong { color: currentColor; }
 
-  &:hover, &:focus,
-  &:visited, &:visited:hover {
-    color: lighten($color__primary, 10%);
+  &:hover, &:focus {
+   color: lighten($color__primary, 10%);
   }
 }
 
