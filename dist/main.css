@@ -223,6 +223,9 @@ address {
 .bg-tertiary {
   background-color: #192f5a; }
 
+.u-text-muted {
+  opacity: 0.7; }
+
 /**
   * -- LAYOUT
   */
