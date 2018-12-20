@@ -13,7 +13,7 @@ $default_title = get_the_title();
     while ( have_posts() ) :
 	?>
 	<h1><?php if ($page_title) { echo $page_title; } else { echo $default_title; } ?></h1>
-	<div class="container">
+	<div class="container u-text-muted">
 		<?php
 		the_post();
 		the_content();
