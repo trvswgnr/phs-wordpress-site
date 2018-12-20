@@ -175,7 +175,7 @@ eval("\n\n__webpack_require__(/*! ../scss/main.scss */ \"./src/scss/main.scss\")
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\n$('.js-menu-toggle').click(function () {\n\t$('.mobile-menu').toggleClass('is-active');\n\t$('html').toggleClass('nav-open');\n});\n\nvar header_position = $(\".header\").offset().top;\nvar height = $('.header').outerHeight();\n\n$(window).scroll(function () {\n\tif ($(window).scrollTop() > 160) {\n\t\t$('header').addClass('is-scrolled');\n\t}\n\tif ($(window).scrollTop() < 160) {\n\t\t$('header').removeClass('is-scrolled');\n\t}\n});\n\n//# sourceURL=webpack:///./src/js/nav.js?");
+eval("\n\n$('.js-menu-toggle').click(function () {\n\t$('.mobile-menu').toggleClass('is-active');\n\t$('html').toggleClass('nav-open');\n});\n\nvar header_position = $(\".header\").offset().top;\nvar header_height = $('.header').outerHeight();\n\n$('head').append('<style>@media (min-width: 920px) {#page {padding-top: ' + header_height + 'px;}}</style>');\n\n$(window).scroll(function () {\n\tif ($(window).scrollTop() > header_height + 70) {\n\t\t$('header').addClass('is-scrolled');\n\t}\n\tif ($(window).scrollTop() < header_height + 70) {\n\t\t$('header').removeClass('is-scrolled');\n\t}\n});\n\n//# sourceURL=webpack:///./src/js/nav.js?");
 
 /***/ }),
 
