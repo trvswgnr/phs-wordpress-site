@@ -994,7 +994,6 @@ address {
   * Forms
   */
 .wpcf7 {
-  max-width: 450px;
   margin: 0 auto; }
 
 input, textarea {
@@ -1255,64 +1254,12 @@ input[type="submit"] {
 /**
   * -- TEMPLATES
   */
-.intro-text p {
-  margin-bottom: 0; }
-
-.solution-box {
-  position: relative; }
-
-.solution-box__bg {
-  position: absolute;
-  right: 0;
-  width: 50%;
-  height: 100%;
-  background-color: #fdbf29;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; }
-  @media (max-width: 768px) {
-    .solution-box__bg {
-      width: 100%;
-      background-image: none !important;
-      background-color: #fdb710; } }
-  .solution-box--reverse .solution-box__bg {
-    right: initial;
-    left: 0;
-    background-color: #1a4b96; }
-
-.solution-box__row {
-  align-items: center;
-  min-height: 600px; }
-  @media (max-width: 768px) {
-    .solution-box__row {
-      min-height: auto;
-      padding: 3em 0; }
-      .solution-box__row .hr--accent {
-        border-color: white; } }
-  .solution-box--reverse .solution-box__row {
-    flex-direction: row-reverse; }
-
-.solution-box__content {
-  padding-right: 3em; }
-  @media (max-width: 768px) {
-    .solution-box__content {
-      color: white;
-      padding-right: 0; } }
-  .solution-box--reverse .solution-box__content {
-    padding-right: 0;
-    padding-left: 3em; }
-    @media (max-width: 768px) {
-      .solution-box--reverse .solution-box__content {
-        color: white;
-        padding-left: 0; } }
-  .solution-box__content p {
-    font-size: 1.1em; }
-
-.solution-box__bg--manage {
-  background-color: #1a4b96; }
-  @media (max-width: 768px) {
-    .solution-box__bg--manage {
-      background-color: #164080; } }
+/**
+	* Contact Page Template
+	*/
+.contact-form-wrapper {
+  max-width: 450px;
+  margin: 0 auto; }
 
 .team-member .row {
   align-items: flex-start; }
