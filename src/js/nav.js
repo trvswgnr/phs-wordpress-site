@@ -4,13 +4,16 @@ $('.js-menu-toggle').click(function () {
 });
 
 var header_position = $(".header").offset().top;
-var height = $('.header').outerHeight();
+var header_height = $('.header').outerHeight();
+
+$('head').append(`<style>@media (min-width: 920px) {#page {padding-top: ${header_height}px;}}</style>`);
 
 $(window).scroll(function () {
-	if ($(window).scrollTop() > (160)) {
+	if ($(window).scrollTop() > (header_height + 70)) {
 		$('header').addClass('is-scrolled');
 	}
-	if ($(window).scrollTop() < (160)) {
+	if ($(window).scrollTop() < (header_height + 70)) {
 		$('header').removeClass('is-scrolled');
 	}
 });
+
