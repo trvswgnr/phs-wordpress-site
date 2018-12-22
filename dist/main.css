@@ -993,8 +993,9 @@ address {
 /**
   * Forms
   */
-.wpcf7 {
-  margin: 0 auto; }
+body .wpcf7 {
+  margin: 0 auto;
+  margin-top: 32px; }
 
 input, textarea {
   width: 100%;
@@ -1008,6 +1009,12 @@ input {
 
 textarea {
   padding: 8px; }
+
+label {
+  font-weight: bold; }
+  label input, label textarea {
+    margin-top: 5px;
+    margin-bottom: 10px; }
 
 .gform_wrapper#gform_wrapper_1 {
   padding-top: 5em; }
