@@ -683,14 +683,14 @@ address {
 .logo {
   max-width: 260px;
   display: flex;
-  transition: 0.2s; }
+  transition: 0s; }
   @media (max-width: 768px) {
     .logo {
       max-width: 150px; } }
   @media (min-width: 920px) {
     .is-scrolled .logo {
       max-width: 150px;
-      transition: 0.2s; } }
+      transition: 0.4s; } }
   .logo img {
     height: 100%;
     width: 100%; }

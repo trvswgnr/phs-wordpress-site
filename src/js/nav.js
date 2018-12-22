@@ -9,10 +9,10 @@ var header_height = $('.header').outerHeight();
 $('head').append(`<style>@media (min-width: 920px) {#page {padding-top: ${header_height}px;}}</style>`);
 
 $(window).scroll(function () {
-	if ($(window).scrollTop() > (header_height - (header_height/3))) {
+	if ($(window).scrollTop() > (header_height)) {
 		$('header').addClass('is-scrolled');
 	}
-	if ($(window).scrollTop() < (header_height - (header_height/3))) {
+	if ($(window).scrollTop() < (header_height - (header_height/2))) {
 		$('header').removeClass('is-scrolled');
 	}
 });
