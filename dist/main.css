@@ -680,6 +680,21 @@ address {
 /**
   * Header
   */
+@-webkit-keyframes slideDown {
+  from {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%); }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+@keyframes slideDown {
+  from {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%); }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
 .logo {
   max-width: 260px;
   display: flex;
@@ -707,7 +722,11 @@ address {
       position: absolute; } }
   @media (min-width: 920px) {
     .header.is-scrolled {
-      position: fixed; } }
+      position: fixed;
+      -webkit-animation-name: slideDown;
+              animation-name: slideDown;
+      -webkit-animation-duration: 0.3s;
+              animation-duration: 0.3s; } }
 
 .header__inner {
   padding: 9px 0;
